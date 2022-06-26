@@ -1,3 +1,5 @@
+import { Grid } from "@mui/material";
+import { Container } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Item from "./components/Item";
@@ -34,13 +36,29 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {item.length > 0 ? (
-          item.map((item: Star, index: number) => (
-            <Item item={item} index={index} handleDelete={handleDelete} />
-          ))
-        ) : (
-          <Loader />
-        )}
+        <Container sx={{ marginBottom: 10 }}>
+          <h2
+            style={{
+              color: "white",
+              fontSize: "50px",
+            }}
+          >
+            Welcome to Nasa Api!
+          </h2>
+          <Grid container spacing={2}>
+            {item.length > 0 ? (
+              item.map((item: Star, index: number) => (
+                <Grid item xs={12} sm={6} md={4}>
+                  <Item item={item} index={index} handleDelete={handleDelete} />
+                </Grid>
+              ))
+            ) : (
+              <Container>
+                <Loader />
+              </Container>
+            )}
+          </Grid>
+        </Container>
       </header>
     </div>
   );
