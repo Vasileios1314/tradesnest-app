@@ -1,5 +1,11 @@
 # Tradesnest spa solution
 
+## App Quick OverView
+
+![App demo](./src/assets/Screen%20Recording%202022-06-26%20at%2013.gif)
+
+---
+
 ⭐ **[NASA Open APIs](https://api.nasa.gov/#:~:text=Hourly%20Limit%3A%2030%20requests%20per,per%20IP%20address%20per%20day)**
 
 👇 **API restrictions** 👇
@@ -26,7 +32,7 @@
 
 ### Running the Node.js Server
 
-If preferred, you can run a Node.js server instead.
+If preferred, you can run a Node.js server.
 To do this, navigate to the root of the project, install the dependencies (only the first time) and run the start script:
 
 ```
