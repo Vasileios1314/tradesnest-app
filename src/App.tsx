@@ -48,7 +48,7 @@ function App() {
           <Grid container spacing={2}>
             {item.length > 0 ? (
               item.map((item: Star, index: number) => (
-                <Grid item xs={12} sm={6} md={4}>
+                <Grid item xs={12} sm={6} md={4} key={index}>
                   <Item item={item} index={index} handleDelete={handleDelete} />
                 </Grid>
               ))

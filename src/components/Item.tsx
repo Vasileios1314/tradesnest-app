@@ -6,11 +6,10 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  IconButton,
   Modal,
   Typography,
 } from "@mui/material";
-import { borderRadius, Container } from "@mui/system";
+import { Container } from "@mui/system";
 import React from "react";
 import { ItemsType } from "../types/Items.types";
 
